@@ -1,0 +1,12 @@
+# D435i IMU initial parameters for Kalibr.
+# These are starting values for running the pipeline.
+# For final high-quality VIO, estimate them with Allan variance.
+
+accelerometer_noise_density: 0.0009307862574
+accelerometer_random_walk: 0.0001149383323
+
+gyroscope_noise_density: 0.000183309712
+gyroscope_random_walk: 5.116486261e-06
+
+rostopic: /camera/camera/imu
+update_rate: 200.0

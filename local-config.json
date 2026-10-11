@@ -1,0 +1,314 @@
+{
+  "image": {
+    "Id": "sha256:7d3b67a1d6f7c7498d0bd8c6cea62ebc9c6e410c990eaa844e31b52937643ea8",
+    "RepoTags": [
+      "kalibr:latest"
+    ],
+    "RepoDigests": [
+      "kalibr@sha256:7d3b67a1d6f7c7498d0bd8c6cea62ebc9c6e410c990eaa844e31b52937643ea8"
+    ],
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": "2026-05-11T11:56:45.816076479+08:00",
+    "Config": {
+      "Env": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LANG=C.UTF-8",
+        "LC_ALL=C.UTF-8",
+        "ROS_DISTRO=noetic",
+        "WORKSPACE=/catkin_ws"
+      ],
+      "Entrypoint": [
+        "/bin/sh",
+        "-c",
+        "export KALIBR_MANUAL_FOCAL_LENGTH_INIT=1 && \tcd $WORKSPACE && \t/bin/bash"
+      ],
+      "Labels": {
+        "org.opencontainers.image.ref.name": "ubuntu",
+        "org.opencontainers.image.version": "20.04"
+      }
+    },
+    "Architecture": "amd64",
+    "Os": "linux",
+    "Size": 1643720479,
+    "RootFS": {
+      "Type": "layers",
+      "Layers": [
+        "sha256:470b66ea5123c93b0d5606e4213bf9e47d3d426b640d32472e4ac213186c4bb6",
+        "sha256:a889f9143a450f2a6d23fceb13d0e5189af1d2135f795afd4298224b0dbe7724",
+        "sha256:d214fe2343d3df0737d521de7c4d99e5f245e2fe64a02ba803bab2116127afe4",
+        "sha256:f7b4bcdc70dec019f5bd29c27fc3715552bf6f6e79122c69d28cf995f9dbd831",
+        "sha256:c04a204a9461a225d9965e27d7d7e6d3797968b08980315be6e24c525967319d",
+        "sha256:baa390fe1e57c3c3c35ccbfde67565413b7e404d530fe026179f427dc94aacb8",
+        "sha256:9829cd12d25623ddf901ded0b4344f5c90ccb3db1306bc1ad81ec2519349b4c0",
+        "sha256:5d999dce21083b1719b89f9c3b2121e6e9689b01dd027fe53a441c0950f87f83",
+        "sha256:5c7cd8870245cde83009029a52362b41b4f0e32970e811ad7389dbb0f7647dda",
+        "sha256:56865b1d0fd20014eeb0d28cdf4a7b89c39c3f2add2156ef0845ec4317e1ca33",
+        "sha256:3cb25955966ca55514da510c06189ca733200ccb7a13c6faaa99ef59901ffc42",
+        "sha256:ee3770228757581df2f9eb32c405ea74e4e9d74437c7b2495efadecf2c02a44d",
+        "sha256:3afd79f308817bb74e09a8cebb1f97336b11c9cd796f89999b7b32a9b0d5b64c",
+        "sha256:ec1760a6c577cb0bdb69f00d4885fb26bcd9583d9337964c42868daaa0df3ab6",
+        "sha256:85ed672f56f3f267c0f6e50c9553cf017db121e5e5bea027d1ee4067e37cae7f",
+        "sha256:cc47dff440c861c07a53cd2c0cda376343053b530f707629c183bba6d07b54e6",
+        "sha256:acce8518f4c3a0b89d0cbcc1542d5feffb3bedd943f46012d98c82ac63a2f802"
+      ]
+    },
+    "Metadata": {
+      "LastTagTime": "2026-05-11T03:57:17.906745409Z"
+    },
+    "Descriptor": {
+      "mediaType": "application/vnd.oci.image.index.v1+json",
+      "digest": "sha256:7d3b67a1d6f7c7498d0bd8c6cea62ebc9c6e410c990eaa844e31b52937643ea8",
+      "size": 856
+    },
+    "Identity": {
+      "Build": [
+        {
+          "Ref": "zw6qdutouv18wr2vvrp0uw5hu",
+          "CreatedAt": "2026-05-11T11:57:24.971220268+08:00"
+        }
+      ]
+    }
+  },
+  "reference_container": {
+    "Id": "7a66c6d774dcdbe032738641faf87d225b427fbe572ea98106403172fc8e8a54",
+    "Created": "2026-07-13T15:21:43.647541649Z",
+    "Path": "/bin/sh",
+    "Args": [
+      "-c",
+      "export KALIBR_MANUAL_FOCAL_LENGTH_INIT=1 && \tcd $WORKSPACE && \t/bin/bash"
+    ],
+    "State": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 255,
+      "Error": "",
+      "StartedAt": "2026-07-13T15:21:43.674272649Z",
+      "FinishedAt": "2026-08-20T02:35:30.779635258Z"
+    },
+    "Image": "sha256:7d3b67a1d6f7c7498d0bd8c6cea62ebc9c6e410c990eaa844e31b52937643ea8",
+    "ResolvConfPath": "/var/lib/docker/containers/7a66c6d774dcdbe032738641faf87d225b427fbe572ea98106403172fc8e8a54/resolv.conf",
+    "HostnamePath": "/var/lib/docker/containers/7a66c6d774dcdbe032738641faf87d225b427fbe572ea98106403172fc8e8a54/hostname",
+    "HostsPath": "/var/lib/docker/containers/7a66c6d774dcdbe032738641faf87d225b427fbe572ea98106403172fc8e8a54/hosts",
+    "LogPath": "/var/lib/docker/containers/7a66c6d774dcdbe032738641faf87d225b427fbe572ea98106403172fc8e8a54/7a66c6d774dcdbe032738641faf87d225b427fbe572ea98106403172fc8e8a54-json.log",
+    "Name": "/charming_euler",
+    "RestartCount": 0,
+    "Driver": "overlayfs",
+    "Platform": "linux",
+    "MountLabel": "",
+    "ProcessLabel": "",
+    "AppArmorProfile": "docker-default",
+    "ExecIDs": null,
+    "HostConfig": {
+      "Binds": [
+        "/tmp/.X11-unix:/tmp/.X11-unix:rw",
+        "/home/qingxiansui/d455_kalibr/data:/data"
+      ],
+      "ContainerIDFile": "",
+      "LogConfig": {
+        "Type": "json-file",
+        "Config": {}
+      },
+      "NetworkMode": "bridge",
+      "PortBindings": {},
+      "RestartPolicy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "AutoRemove": false,
+      "VolumeDriver": "",
+      "VolumesFrom": null,
+      "ConsoleSize": [
+        29,
+        72
+      ],
+      "CapAdd": null,
+      "CapDrop": null,
+      "CgroupnsMode": "private",
+      "Dns": [],
+      "DnsOptions": [],
+      "DnsSearch": [],
+      "ExtraHosts": null,
+      "GroupAdd": null,
+      "IpcMode": "private",
+      "Cgroup": "",
+      "Links": null,
+      "OomScoreAdj": 0,
+      "PidMode": "",
+      "Privileged": false,
+      "PublishAllPorts": false,
+      "ReadonlyRootfs": false,
+      "SecurityOpt": null,
+      "UTSMode": "",
+      "UsernsMode": "",
+      "ShmSize": 67108864,
+      "Runtime": "runc",
+      "Isolation": "",
+      "CpuShares": 0,
+      "Memory": 0,
+      "NanoCpus": 0,
+      "CgroupParent": "",
+      "BlkioWeight": 0,
+      "BlkioWeightDevice": [],
+      "BlkioDeviceReadBps": [],
+      "BlkioDeviceWriteBps": [],
+      "BlkioDeviceReadIOps": [],
+      "BlkioDeviceWriteIOps": [],
+      "CpuPeriod": 0,
+      "CpuQuota": 0,
+      "CpuRealtimePeriod": 0,
+      "CpuRealtimeRuntime": 0,
+      "CpusetCpus": "",
+      "CpusetMems": "",
+      "Devices": [],
+      "DeviceCgroupRules": null,
+      "DeviceRequests": null,
+      "MemoryReservation": 0,
+      "MemorySwap": 0,
+      "MemorySwappiness": null,
+      "OomKillDisable": null,
+      "PidsLimit": null,
+      "Ulimits": [],
+      "CpuCount": 0,
+      "CpuPercent": 0,
+      "IOMaximumIOps": 0,
+      "IOMaximumBandwidth": 0,
+      "MaskedPaths": [
+        "/proc/acpi",
+        "/proc/asound",
+        "/proc/interrupts",
+        "/proc/kcore",
+        "/proc/keys",
+        "/proc/latency_stats",
+        "/proc/sched_debug",
+        "/proc/scsi",
+        "/proc/timer_list",
+        "/proc/timer_stats",
+        "/sys/devices/virtual/powercap",
+        "/sys/firmware",
+        "/sys/devices/system/cpu/cpu0/thermal_throttle",
+        "/sys/devices/system/cpu/cpu1/thermal_throttle",
+        "/sys/devices/system/cpu/cpu2/thermal_throttle",
+        "/sys/devices/system/cpu/cpu3/thermal_throttle",
+        "/sys/devices/system/cpu/cpu4/thermal_throttle",
+        "/sys/devices/system/cpu/cpu5/thermal_throttle",
+        "/sys/devices/system/cpu/cpu6/thermal_throttle",
+        "/sys/devices/system/cpu/cpu7/thermal_throttle",
+        "/sys/devices/system/cpu/cpu8/thermal_throttle",
+        "/sys/devices/system/cpu/cpu9/thermal_throttle",
+        "/sys/devices/system/cpu/cpu10/thermal_throttle",
+        "/sys/devices/system/cpu/cpu11/thermal_throttle",
+        "/sys/devices/system/cpu/cpu12/thermal_throttle",
+        "/sys/devices/system/cpu/cpu13/thermal_throttle",
+        "/sys/devices/system/cpu/cpu14/thermal_throttle",
+        "/sys/devices/system/cpu/cpu15/thermal_throttle",
+        "/sys/devices/system/cpu/cpu16/thermal_throttle",
+        "/sys/devices/system/cpu/cpu17/thermal_throttle",
+        "/sys/devices/system/cpu/cpu18/thermal_throttle",
+        "/sys/devices/system/cpu/cpu19/thermal_throttle"
+      ],
+      "ReadonlyPaths": [
+        "/proc/bus",
+        "/proc/fs",
+        "/proc/irq",
+        "/proc/sys",
+        "/proc/sysrq-trigger"
+      ]
+    },
+    "Storage": {
+      "RootFS": {
+        "Snapshot": {
+          "Name": "overlayfs"
+        }
+      }
+    },
+    "Mounts": [
+      {
+        "Type": "bind",
+        "Source": "/home/qingxiansui/d455_kalibr/data",
+        "Destination": "/data",
+        "Mode": "",
+        "RW": true,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "bind",
+        "Source": "/tmp/.X11-unix",
+        "Destination": "/tmp/.X11-unix",
+        "Mode": "rw",
+        "RW": true,
+        "Propagation": "rprivate"
+      }
+    ],
+    "Config": {
+      "Hostname": "7a66c6d774dc",
+      "Domainname": "",
+      "User": "",
+      "AttachStdin": true,
+      "AttachStdout": true,
+      "AttachStderr": true,
+      "Tty": true,
+      "OpenStdin": true,
+      "StdinOnce": true,
+      "Env": [
+        "DISPLAY=:1",
+        "QT_X11_NO_MITSHM=1",
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LANG=C.UTF-8",
+        "LC_ALL=C.UTF-8",
+        "ROS_DISTRO=noetic",
+        "WORKSPACE=/catkin_ws"
+      ],
+      "Cmd": null,
+      "Image": "kalibr",
+      "Volumes": null,
+      "WorkingDir": "",
+      "Entrypoint": [
+        "/bin/sh",
+        "-c",
+        "export KALIBR_MANUAL_FOCAL_LENGTH_INIT=1 && \tcd $WORKSPACE && \t/bin/bash"
+      ],
+      "Labels": {
+        "org.opencontainers.image.ref.name": "ubuntu",
+        "org.opencontainers.image.version": "20.04"
+      }
+    },
+    "NetworkSettings": {
+      "SandboxID": "",
+      "SandboxKey": "",
+      "Ports": {},
+      "Networks": {
+        "bridge": {
+          "IPAMConfig": null,
+          "Links": null,
+          "Aliases": null,
+          "DriverOpts": null,
+          "GwPriority": 0,
+          "NetworkID": "052763524c7c1da21b6305e72fcec690b3177f257985d9819d62cd335d6b8dc3",
+          "EndpointID": "",
+          "Gateway": "",
+          "IPAddress": "",
+          "MacAddress": "",
+          "IPPrefixLen": 0,
+          "IPv6Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "DNSNames": null
+        }
+      }
+    },
+    "ImageManifestDescriptor": {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:a934852f0cc3385831729282f29350de30eb9219065eaa4a8be1651edefc361d",
+      "size": 3549,
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      }
+    }
+  }
+}

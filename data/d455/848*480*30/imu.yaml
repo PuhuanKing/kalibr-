@@ -1,0 +1,16 @@
+# Kalibr IMU configuration for the D455 dataset in this workspace.
+# Noise terms come from Allan deviation analysis in imu_allan.yaml.
+# Kalibr expects one IMU ROS topic. The d455 recording stored accel and gyro separately
+# (/camera/d455/accel/sample, /camera/d455/gyro/sample); merge_realsense_imu.py produces
+# the combined /camera/d455/imu topic (gyro timebase, accel linearly interpolated).
+
+# Accelerometers
+accelerometer_noise_density: 0.0009025117101219337
+accelerometer_random_walk: 7.488299992323122e-05
+
+# Gyroscopes
+gyroscope_noise_density: 0.00014873590113597437
+gyroscope_random_walk: 5.161589260762349e-06
+
+rostopic: /camera/d455/imu
+update_rate: 200.0
